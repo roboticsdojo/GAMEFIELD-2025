@@ -1,0 +1,12 @@
+# ROS 2 specific
+build/
+install/
+log/
+
+# VS Code
+.vscode/
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
