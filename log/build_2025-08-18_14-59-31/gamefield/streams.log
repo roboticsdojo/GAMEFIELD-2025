@@ -1,0 +1,24 @@
+[0.206s] Invoking command in '/home/victoria_rotich/gamefield/build/gamefield': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/victoria_rotich/dojo_robotics_2025/install/talker:/home/victoria_rotich/dojo_robotics_2025/install/my_robot_package:/home/victoria_rotich/dojo_robotics_2025/install/listener:/home/victoria_rotich/dojo_robotics_2025/src/install/my_robot_package:/opt/ros/humble /usr/bin/cmake --build /home/victoria_rotich/gamefield/build/gamefield -- -j8 -l8
+[1.254s] Invoked command in '/home/victoria_rotich/gamefield/build/gamefield' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/victoria_rotich/dojo_robotics_2025/install/talker:/home/victoria_rotich/dojo_robotics_2025/install/my_robot_package:/home/victoria_rotich/dojo_robotics_2025/install/listener:/home/victoria_rotich/dojo_robotics_2025/src/install/my_robot_package:/opt/ros/humble /usr/bin/cmake --build /home/victoria_rotich/gamefield/build/gamefield -- -j8 -l8
+[1.267s] Invoking command in '/home/victoria_rotich/gamefield/build/gamefield': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/victoria_rotich/dojo_robotics_2025/install/talker:/home/victoria_rotich/dojo_robotics_2025/install/my_robot_package:/home/victoria_rotich/dojo_robotics_2025/install/listener:/home/victoria_rotich/dojo_robotics_2025/src/install/my_robot_package:/opt/ros/humble /usr/bin/cmake --install /home/victoria_rotich/gamefield/build/gamefield
+[1.309s] -- Install configuration: ""
+[1.375s] -- Execute custom install script
+[1.376s] -- Up-to-date symlink: /home/victoria_rotich/gamefield/install/gamefield/share/ament_index/resource_index/package_run_dependencies/gamefield
+[1.376s] -- Up-to-date symlink: /home/victoria_rotich/gamefield/install/gamefield/share/ament_index/resource_index/parent_prefix_path/gamefield
+[1.377s] -- Up-to-date symlink: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/environment/ament_prefix_path.sh
+[1.378s] -- Up-to-date symlink: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/environment/ament_prefix_path.dsv
+[1.378s] -- Up-to-date symlink: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/environment/path.sh
+[1.378s] -- Up-to-date symlink: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/environment/path.dsv
+[1.378s] -- Up-to-date symlink: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/local_setup.bash
+[1.379s] -- Up-to-date symlink: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/local_setup.sh
+[1.379s] -- Up-to-date symlink: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/local_setup.zsh
+[1.380s] -- Up-to-date symlink: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/local_setup.dsv
+[1.380s] -- Symlinking: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/package.dsv
+[1.398s] -- Up-to-date symlink: /home/victoria_rotich/gamefield/install/gamefield/share/ament_index/resource_index/packages/gamefield
+[1.398s] -- Up-to-date symlink: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/cmake/gamefieldConfig.cmake
+[1.398s] -- Up-to-date symlink: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/cmake/gamefieldConfig-version.cmake
+[1.399s] -- Up-to-date symlink: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/package.xml
+[1.409s] -- Up-to-date symlink: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/urdf/gamefield.urdf
+[1.409s] -- Symlinking: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/launch/launch_ign.launch.py
+[1.423s] -- Up-to-date symlink: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/launch/view_gamefield.launch.py
+[1.426s] Invoked command in '/home/victoria_rotich/gamefield/build/gamefield' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/victoria_rotich/dojo_robotics_2025/install/talker:/home/victoria_rotich/dojo_robotics_2025/install/my_robot_package:/home/victoria_rotich/dojo_robotics_2025/install/listener:/home/victoria_rotich/dojo_robotics_2025/src/install/my_robot_package:/opt/ros/humble /usr/bin/cmake --install /home/victoria_rotich/gamefield/build/gamefield

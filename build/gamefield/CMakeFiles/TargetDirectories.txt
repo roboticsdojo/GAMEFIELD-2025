@@ -1,0 +1,9 @@
+/home/victoria_rotich/gamefield/build/gamefield/CMakeFiles/uninstall.dir
+/home/victoria_rotich/gamefield/build/gamefield/CMakeFiles/gamefield_uninstall.dir
+/home/victoria_rotich/gamefield/build/gamefield/CMakeFiles/test.dir
+/home/victoria_rotich/gamefield/build/gamefield/CMakeFiles/edit_cache.dir
+/home/victoria_rotich/gamefield/build/gamefield/CMakeFiles/rebuild_cache.dir
+/home/victoria_rotich/gamefield/build/gamefield/CMakeFiles/list_install_components.dir
+/home/victoria_rotich/gamefield/build/gamefield/CMakeFiles/install.dir
+/home/victoria_rotich/gamefield/build/gamefield/CMakeFiles/install/local.dir
+/home/victoria_rotich/gamefield/build/gamefield/CMakeFiles/install/strip.dir

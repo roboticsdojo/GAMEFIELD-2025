@@ -1,0 +1,129 @@
+[9.591s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[9.591s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7a7f0a53fc10>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7a7f0a53f6a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7a7f0a53f6a0>>, mixin_verb=('build',))
+[15.635s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[15.635s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[15.635s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[15.635s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[15.635s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[15.635s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[15.635s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/victoria_rotich/gamefield'
+[15.635s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[15.636s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[15.636s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[15.636s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[15.636s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[15.636s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[15.636s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[15.636s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[15.636s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[15.867s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[15.868s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[15.868s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[15.868s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[15.868s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[15.868s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[15.868s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[15.868s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[15.868s] Level 1:colcon.colcon_core.package_identification:_identify(gamefield) by extensions ['ignore', 'ignore_ament_install']
+[15.868s] Level 1:colcon.colcon_core.package_identification:_identify(gamefield) by extension 'ignore'
+[15.868s] Level 1:colcon.colcon_core.package_identification:_identify(gamefield) by extension 'ignore_ament_install'
+[15.869s] Level 1:colcon.colcon_core.package_identification:_identify(gamefield) by extensions ['colcon_pkg']
+[15.869s] Level 1:colcon.colcon_core.package_identification:_identify(gamefield) by extension 'colcon_pkg'
+[15.869s] Level 1:colcon.colcon_core.package_identification:_identify(gamefield) by extensions ['colcon_meta']
+[15.869s] Level 1:colcon.colcon_core.package_identification:_identify(gamefield) by extension 'colcon_meta'
+[15.869s] Level 1:colcon.colcon_core.package_identification:_identify(gamefield) by extensions ['ros']
+[15.869s] Level 1:colcon.colcon_core.package_identification:_identify(gamefield) by extension 'ros'
+[15.881s] DEBUG:colcon.colcon_core.package_identification:Package 'gamefield' with type 'ros.ament_cmake' and name 'gamefield'
+[15.881s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[15.881s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[15.881s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[15.881s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[15.881s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[15.881s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[15.882s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[15.882s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[15.882s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[15.882s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[15.882s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[16.137s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[16.137s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[16.181s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/victoria_rotich/dojo_robotics_2025/install
+[16.182s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/victoria_rotich/ros2_ws/install
+[16.184s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/victoria_rotich/dojo_robotics_2025/src/install
+[16.187s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 374 installed packages in /opt/ros/humble
+[16.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[16.681s] Level 5:colcon.colcon_core.verb:set package 'gamefield' build argument 'cmake_args' from command line to 'None'
+[16.681s] Level 5:colcon.colcon_core.verb:set package 'gamefield' build argument 'cmake_target' from command line to 'None'
+[16.681s] Level 5:colcon.colcon_core.verb:set package 'gamefield' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[16.681s] Level 5:colcon.colcon_core.verb:set package 'gamefield' build argument 'cmake_clean_cache' from command line to 'False'
+[16.681s] Level 5:colcon.colcon_core.verb:set package 'gamefield' build argument 'cmake_clean_first' from command line to 'False'
+[16.681s] Level 5:colcon.colcon_core.verb:set package 'gamefield' build argument 'cmake_force_configure' from command line to 'False'
+[16.681s] Level 5:colcon.colcon_core.verb:set package 'gamefield' build argument 'ament_cmake_args' from command line to 'None'
+[16.681s] Level 5:colcon.colcon_core.verb:set package 'gamefield' build argument 'catkin_cmake_args' from command line to 'None'
+[16.681s] Level 5:colcon.colcon_core.verb:set package 'gamefield' build argument 'catkin_skip_building_tests' from command line to 'False'
+[16.681s] DEBUG:colcon.colcon_core.verb:Building package 'gamefield' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/victoria_rotich/gamefield/build/gamefield', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/victoria_rotich/gamefield/install/gamefield', 'merge_install': False, 'path': '/home/victoria_rotich/gamefield/gamefield', 'symlink_install': True, 'test_result_base': None}
+[16.681s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[16.683s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[16.683s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/victoria_rotich/gamefield/gamefield' with build type 'ament_cmake'
+[16.683s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/victoria_rotich/gamefield/gamefield'
+[16.792s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[16.793s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[16.794s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[16.890s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/victoria_rotich/gamefield/build/gamefield': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/victoria_rotich/dojo_robotics_2025/install/talker:/home/victoria_rotich/dojo_robotics_2025/install/my_robot_package:/home/victoria_rotich/dojo_robotics_2025/install/listener:/home/victoria_rotich/dojo_robotics_2025/src/install/my_robot_package:/opt/ros/humble /usr/bin/cmake --build /home/victoria_rotich/gamefield/build/gamefield -- -j8 -l8
+[17.938s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/victoria_rotich/gamefield/build/gamefield' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/victoria_rotich/dojo_robotics_2025/install/talker:/home/victoria_rotich/dojo_robotics_2025/install/my_robot_package:/home/victoria_rotich/dojo_robotics_2025/install/listener:/home/victoria_rotich/dojo_robotics_2025/src/install/my_robot_package:/opt/ros/humble /usr/bin/cmake --build /home/victoria_rotich/gamefield/build/gamefield -- -j8 -l8
+[17.951s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/victoria_rotich/gamefield/build/gamefield': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/victoria_rotich/dojo_robotics_2025/install/talker:/home/victoria_rotich/dojo_robotics_2025/install/my_robot_package:/home/victoria_rotich/dojo_robotics_2025/install/listener:/home/victoria_rotich/dojo_robotics_2025/src/install/my_robot_package:/opt/ros/humble /usr/bin/cmake --install /home/victoria_rotich/gamefield/build/gamefield
+[18.109s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gamefield)
+[18.111s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/victoria_rotich/gamefield/build/gamefield' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/victoria_rotich/dojo_robotics_2025/install/talker:/home/victoria_rotich/dojo_robotics_2025/install/my_robot_package:/home/victoria_rotich/dojo_robotics_2025/install/listener:/home/victoria_rotich/dojo_robotics_2025/src/install/my_robot_package:/opt/ros/humble /usr/bin/cmake --install /home/victoria_rotich/gamefield/build/gamefield
+[18.992s] Level 1:colcon.colcon_core.environment:checking '/home/victoria_rotich/gamefield/install/gamefield' for CMake module files
+[18.993s] Level 1:colcon.colcon_core.environment:checking '/home/victoria_rotich/gamefield/install/gamefield' for CMake config files
+[18.994s] Level 1:colcon.colcon_core.shell:create_environment_hook('gamefield', 'cmake_prefix_path')
+[18.994s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/victoria_rotich/gamefield/install/gamefield/share/gamefield/hook/cmake_prefix_path.ps1'
+[19.017s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/victoria_rotich/gamefield/install/gamefield/share/gamefield/hook/cmake_prefix_path.dsv'
+[19.020s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/victoria_rotich/gamefield/install/gamefield/share/gamefield/hook/cmake_prefix_path.sh'
+[19.024s] Level 1:colcon.colcon_core.environment:checking '/home/victoria_rotich/gamefield/install/gamefield/bin'
+[19.024s] Level 1:colcon.colcon_core.environment:checking '/home/victoria_rotich/gamefield/install/gamefield/lib/pkgconfig/gamefield.pc'
+[19.024s] Level 1:colcon.colcon_core.environment:checking '/home/victoria_rotich/gamefield/install/gamefield/lib/python3.10/site-packages'
+[19.025s] Level 1:colcon.colcon_core.environment:checking '/home/victoria_rotich/gamefield/install/gamefield/bin'
+[19.026s] INFO:colcon.colcon_core.shell:Creating package script '/home/victoria_rotich/gamefield/install/gamefield/share/gamefield/package.ps1'
+[19.029s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/victoria_rotich/gamefield/install/gamefield/share/gamefield/package.dsv'
+[19.032s] INFO:colcon.colcon_core.shell:Creating package script '/home/victoria_rotich/gamefield/install/gamefield/share/gamefield/package.sh'
+[19.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/victoria_rotich/gamefield/install/gamefield/share/gamefield/package.bash'
+[19.082s] INFO:colcon.colcon_core.shell:Creating package script '/home/victoria_rotich/gamefield/install/gamefield/share/gamefield/package.zsh'
+[19.101s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/victoria_rotich/gamefield/install/gamefield/share/colcon-core/packages/gamefield)
+[19.103s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gamefield)
+[19.104s] Level 1:colcon.colcon_core.environment:checking '/home/victoria_rotich/gamefield/install/gamefield' for CMake module files
+[19.105s] Level 1:colcon.colcon_core.environment:checking '/home/victoria_rotich/gamefield/install/gamefield' for CMake config files
+[19.105s] Level 1:colcon.colcon_core.shell:create_environment_hook('gamefield', 'cmake_prefix_path')
+[19.106s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/victoria_rotich/gamefield/install/gamefield/share/gamefield/hook/cmake_prefix_path.ps1'
+[19.107s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/victoria_rotich/gamefield/install/gamefield/share/gamefield/hook/cmake_prefix_path.dsv'
+[19.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/victoria_rotich/gamefield/install/gamefield/share/gamefield/hook/cmake_prefix_path.sh'
+[19.110s] Level 1:colcon.colcon_core.environment:checking '/home/victoria_rotich/gamefield/install/gamefield/bin'
+[19.110s] Level 1:colcon.colcon_core.environment:checking '/home/victoria_rotich/gamefield/install/gamefield/lib/pkgconfig/gamefield.pc'
+[19.110s] Level 1:colcon.colcon_core.environment:checking '/home/victoria_rotich/gamefield/install/gamefield/lib/python3.10/site-packages'
+[19.111s] Level 1:colcon.colcon_core.environment:checking '/home/victoria_rotich/gamefield/install/gamefield/bin'
+[19.112s] INFO:colcon.colcon_core.shell:Creating package script '/home/victoria_rotich/gamefield/install/gamefield/share/gamefield/package.ps1'
+[19.117s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/victoria_rotich/gamefield/install/gamefield/share/gamefield/package.dsv'
+[19.118s] INFO:colcon.colcon_core.shell:Creating package script '/home/victoria_rotich/gamefield/install/gamefield/share/gamefield/package.sh'
+[19.119s] INFO:colcon.colcon_core.shell:Creating package script '/home/victoria_rotich/gamefield/install/gamefield/share/gamefield/package.bash'
+[19.120s] INFO:colcon.colcon_core.shell:Creating package script '/home/victoria_rotich/gamefield/install/gamefield/share/gamefield/package.zsh'
+[19.121s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/victoria_rotich/gamefield/install/gamefield/share/colcon-core/packages/gamefield)
+[19.121s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[19.122s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[19.122s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[19.122s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[19.317s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[19.317s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[19.317s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[19.317s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[19.318s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[19.318s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[19.318s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/victoria_rotich/gamefield/install/local_setup.ps1'
+[19.327s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/victoria_rotich/gamefield/install/_local_setup_util_ps1.py'
+[19.329s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/victoria_rotich/gamefield/install/setup.ps1'
+[19.331s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/victoria_rotich/gamefield/install/local_setup.sh'
+[19.332s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/victoria_rotich/gamefield/install/_local_setup_util_sh.py'
+[19.332s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/victoria_rotich/gamefield/install/setup.sh'
+[19.334s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/victoria_rotich/gamefield/install/local_setup.bash'
+[19.335s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/victoria_rotich/gamefield/install/setup.bash'
+[19.337s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/victoria_rotich/gamefield/install/local_setup.zsh'
+[19.339s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/victoria_rotich/gamefield/install/setup.zsh'

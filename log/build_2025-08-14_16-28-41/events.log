@@ -1,0 +1,615 @@
+[0.000000] (-) TimerEvent: {}
+[0.000412] (gamefield) JobQueued: {'identifier': 'gamefield', 'dependencies': OrderedDict()}
+[0.001232] (gamefield) JobStarted: {'identifier': 'gamefield'}
+[0.023784] (gamefield) JobProgress: {'identifier': 'gamefield', 'progress': 'cmake'}
+[0.029182] (gamefield) Command: {'cmd': ['/usr/bin/cmake', '/home/victoria_rotich/gamefield/gamefield', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/victoria_rotich/gamefield/install/gamefield'], 'cwd': '/home/victoria_rotich/gamefield/build/gamefield', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'victoria_rotich'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/victoria_rotich'), ('OLDPWD', '/home/victoria_rotich/gamefield/gamefield'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c84ca53c-3158-4e34-a507-32cda9687d1a.sock'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/victoria_rotich/dojo_robotics_2025/install:/home/victoria_rotich/ros2_ws/install:/home/victoria_rotich/dojo_robotics_2025/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'victoria_rotich'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/1253_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/victoria_rotich/.vscode-server/bin/488a1f239235055e34e673291fb8d8c810886f81/bin/remote-cli:/home/victoria_rotich/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.3/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.3/libnvvp:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2023.3.0/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/user/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0/LocalCache/local-packages/Python38/Scripts:/mnt/c/Program Files/dotnet/:/mnt/c/Users/user/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/user/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/user/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/JetBrains/PyCharm 2023.2.3/bin:/mnt/c/Users/user/AppData/Local/Programs/Python/Python312/Scripts:/mnt/c/Users/user/AppData/Local/GitHubDesktop/bin:/mnt/c/8086:/snap/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/etc/fast_ts.xml'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/victoria_rotich/dojo_robotics_2025/install/talker:/home/victoria_rotich/dojo_robotics_2025/install/my_robot_package:/home/victoria_rotich/dojo_robotics_2025/install/my_robot_pack2:/home/victoria_rotich/dojo_robotics_2025/install/listener:/home/victoria_rotich/dojo_robotics_2025/install/cpp_pubsub:/home/victoria_rotich/dojo_robotics_2025/src/install/my_robot_package:/home/victoria_rotich/ros2_ws/install/sllidar_ros2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/victoria_rotich/gamefield/build/gamefield'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/victoria_rotich/dojo_robotics_2025/install/talker/lib/python3.10/site-packages:/home/victoria_rotich/dojo_robotics_2025/build/my_robot_package:/home/victoria_rotich/dojo_robotics_2025/install/my_robot_package/lib/python3.10/site-packages:/home/victoria_rotich/dojo_robotics_2025/install/listener/lib/python3.10/site-packages:/home/victoria_rotich/dojo_robotics_2025/src/install/my_robot_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/victoria_rotich/dojo_robotics_2025/install/my_robot_pack2:/home/victoria_rotich/dojo_robotics_2025/install/cpp_pubsub:/home/victoria_rotich/ros2_ws/install/sllidar_ros2:/home/victoria_rotich/dojo_robotics_2025/install/talker:/home/victoria_rotich/dojo_robotics_2025/install/my_robot_package:/home/victoria_rotich/dojo_robotics_2025/install/listener:/home/victoria_rotich/dojo_robotics_2025/src/install/my_robot_package:/opt/ros/humble'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:')]), 'shell': False}
+[0.098904] (-) TimerEvent: {}
+[0.199710] (-) TimerEvent: {}
+[0.300940] (-) TimerEvent: {}
+[0.402356] (-) TimerEvent: {}
+[0.503639] (-) TimerEvent: {}
+[0.604955] (-) TimerEvent: {}
+[0.706470] (-) TimerEvent: {}
+[0.807712] (-) TimerEvent: {}
+[0.908936] (-) TimerEvent: {}
+[1.010136] (-) TimerEvent: {}
+[1.111543] (-) TimerEvent: {}
+[1.212962] (-) TimerEvent: {}
+[1.314216] (-) TimerEvent: {}
+[1.415579] (-) TimerEvent: {}
+[1.516993] (-) TimerEvent: {}
+[1.618018] (-) TimerEvent: {}
+[1.719133] (-) TimerEvent: {}
+[1.820787] (-) TimerEvent: {}
+[1.921996] (-) TimerEvent: {}
+[2.023037] (-) TimerEvent: {}
+[2.124272] (-) TimerEvent: {}
+[2.225492] (-) TimerEvent: {}
+[2.326733] (-) TimerEvent: {}
+[2.427857] (-) TimerEvent: {}
+[2.528992] (-) TimerEvent: {}
+[2.630225] (-) TimerEvent: {}
+[2.731507] (-) TimerEvent: {}
+[2.832820] (-) TimerEvent: {}
+[2.934162] (-) TimerEvent: {}
+[3.035547] (-) TimerEvent: {}
+[3.137166] (-) TimerEvent: {}
+[3.238682] (-) TimerEvent: {}
+[3.340260] (-) TimerEvent: {}
+[3.441885] (-) TimerEvent: {}
+[3.543694] (-) TimerEvent: {}
+[3.645346] (-) TimerEvent: {}
+[3.746807] (-) TimerEvent: {}
+[3.848233] (-) TimerEvent: {}
+[3.949819] (-) TimerEvent: {}
+[4.051651] (-) TimerEvent: {}
+[4.153037] (-) TimerEvent: {}
+[4.313137] (-) TimerEvent: {}
+[4.414998] (-) TimerEvent: {}
+[4.516615] (-) TimerEvent: {}
+[4.618173] (-) TimerEvent: {}
+[4.720076] (-) TimerEvent: {}
+[4.821747] (-) TimerEvent: {}
+[4.923210] (-) TimerEvent: {}
+[5.025137] (-) TimerEvent: {}
+[5.126582] (-) TimerEvent: {}
+[5.228338] (-) TimerEvent: {}
+[5.273425] (gamefield) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[5.328711] (-) TimerEvent: {}
+[5.429900] (-) TimerEvent: {}
+[5.530949] (-) TimerEvent: {}
+[5.632362] (-) TimerEvent: {}
+[5.734064] (-) TimerEvent: {}
+[5.835953] (-) TimerEvent: {}
+[5.937374] (-) TimerEvent: {}
+[6.038796] (-) TimerEvent: {}
+[6.140439] (-) TimerEvent: {}
+[6.241765] (-) TimerEvent: {}
+[6.343427] (-) TimerEvent: {}
+[6.445318] (-) TimerEvent: {}
+[6.546370] (-) TimerEvent: {}
+[6.647372] (-) TimerEvent: {}
+[6.748078] (-) TimerEvent: {}
+[6.849346] (-) TimerEvent: {}
+[6.950529] (-) TimerEvent: {}
+[7.051784] (-) TimerEvent: {}
+[7.152465] (-) TimerEvent: {}
+[7.253638] (-) TimerEvent: {}
+[7.355521] (-) TimerEvent: {}
+[7.457669] (-) TimerEvent: {}
+[7.559633] (-) TimerEvent: {}
+[7.661054] (-) TimerEvent: {}
+[7.762781] (-) TimerEvent: {}
+[7.864532] (-) TimerEvent: {}
+[7.965878] (-) TimerEvent: {}
+[8.067755] (-) TimerEvent: {}
+[8.169438] (-) TimerEvent: {}
+[8.270902] (-) TimerEvent: {}
+[8.372811] (-) TimerEvent: {}
+[8.474430] (-) TimerEvent: {}
+[8.576435] (-) TimerEvent: {}
+[8.678101] (-) TimerEvent: {}
+[8.779528] (-) TimerEvent: {}
+[8.881083] (-) TimerEvent: {}
+[8.982677] (-) TimerEvent: {}
+[9.084560] (-) TimerEvent: {}
+[9.186295] (-) TimerEvent: {}
+[9.288379] (-) TimerEvent: {}
+[9.389900] (-) TimerEvent: {}
+[9.491124] (-) TimerEvent: {}
+[9.592626] (-) TimerEvent: {}
+[9.693975] (-) TimerEvent: {}
+[9.795587] (-) TimerEvent: {}
+[9.897145] (-) TimerEvent: {}
+[9.999058] (-) TimerEvent: {}
+[10.101030] (-) TimerEvent: {}
+[10.202671] (-) TimerEvent: {}
+[10.304386] (-) TimerEvent: {}
+[10.405421] (-) TimerEvent: {}
+[10.506925] (-) TimerEvent: {}
+[10.608570] (-) TimerEvent: {}
+[10.710104] (-) TimerEvent: {}
+[10.812221] (-) TimerEvent: {}
+[10.914158] (-) TimerEvent: {}
+[11.016440] (-) TimerEvent: {}
+[11.117921] (-) TimerEvent: {}
+[11.219174] (-) TimerEvent: {}
+[11.255775] (gamefield) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[11.319691] (-) TimerEvent: {}
+[11.421159] (-) TimerEvent: {}
+[11.522379] (-) TimerEvent: {}
+[11.623463] (-) TimerEvent: {}
+[11.724598] (-) TimerEvent: {}
+[11.825779] (-) TimerEvent: {}
+[11.927219] (-) TimerEvent: {}
+[12.028445] (-) TimerEvent: {}
+[12.129624] (-) TimerEvent: {}
+[12.231249] (-) TimerEvent: {}
+[12.332634] (-) TimerEvent: {}
+[12.433722] (-) TimerEvent: {}
+[12.535654] (-) TimerEvent: {}
+[12.636825] (-) TimerEvent: {}
+[12.738448] (-) TimerEvent: {}
+[12.839817] (-) TimerEvent: {}
+[12.940994] (-) TimerEvent: {}
+[13.042020] (-) TimerEvent: {}
+[13.143251] (-) TimerEvent: {}
+[13.244652] (-) TimerEvent: {}
+[13.346119] (-) TimerEvent: {}
+[13.447519] (-) TimerEvent: {}
+[13.465733] (gamefield) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[13.547862] (-) TimerEvent: {}
+[13.649078] (-) TimerEvent: {}
+[13.750659] (-) TimerEvent: {}
+[13.852025] (-) TimerEvent: {}
+[13.953447] (-) TimerEvent: {}
+[14.054590] (-) TimerEvent: {}
+[14.155100] (-) TimerEvent: {}
+[14.285498] (gamefield) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[14.286372] (-) TimerEvent: {}
+[14.370127] (gamefield) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[14.386590] (-) TimerEvent: {}
+[14.487425] (-) TimerEvent: {}
+[14.588445] (-) TimerEvent: {}
+[14.689795] (-) TimerEvent: {}
+[14.757863] (gamefield) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[14.790469] (-) TimerEvent: {}
+[14.841366] (gamefield) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[14.859879] (gamefield) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[14.891008] (-) TimerEvent: {}
+[14.992073] (-) TimerEvent: {}
+[15.093308] (-) TimerEvent: {}
+[15.194577] (-) TimerEvent: {}
+[15.295906] (-) TimerEvent: {}
+[15.397157] (-) TimerEvent: {}
+[15.498162] (-) TimerEvent: {}
+[15.599147] (-) TimerEvent: {}
+[15.632876] (gamefield) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[15.670805] (gamefield) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[15.672733] (gamefield) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[15.674863] (gamefield) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[15.699524] (-) TimerEvent: {}
+[15.800871] (-) TimerEvent: {}
+[15.902267] (-) TimerEvent: {}
+[16.003593] (-) TimerEvent: {}
+[16.104865] (-) TimerEvent: {}
+[16.206108] (-) TimerEvent: {}
+[16.307556] (-) TimerEvent: {}
+[16.408895] (-) TimerEvent: {}
+[16.510113] (-) TimerEvent: {}
+[16.611782] (-) TimerEvent: {}
+[16.713169] (-) TimerEvent: {}
+[16.814365] (-) TimerEvent: {}
+[16.916282] (-) TimerEvent: {}
+[17.017874] (-) TimerEvent: {}
+[17.119588] (-) TimerEvent: {}
+[17.221443] (-) TimerEvent: {}
+[17.322782] (-) TimerEvent: {}
+[17.424349] (-) TimerEvent: {}
+[17.525809] (-) TimerEvent: {}
+[17.627135] (-) TimerEvent: {}
+[17.728624] (-) TimerEvent: {}
+[17.830278] (-) TimerEvent: {}
+[17.931977] (-) TimerEvent: {}
+[18.033374] (-) TimerEvent: {}
+[18.135011] (-) TimerEvent: {}
+[18.236606] (-) TimerEvent: {}
+[18.282276] (gamefield) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[18.336894] (-) TimerEvent: {}
+[18.437924] (-) TimerEvent: {}
+[18.538957] (-) TimerEvent: {}
+[18.640332] (-) TimerEvent: {}
+[18.741410] (-) TimerEvent: {}
+[18.842548] (-) TimerEvent: {}
+[18.944003] (-) TimerEvent: {}
+[19.045332] (-) TimerEvent: {}
+[19.146878] (-) TimerEvent: {}
+[19.248857] (-) TimerEvent: {}
+[19.504702] (-) TimerEvent: {}
+[19.513939] (gamefield) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[19.604878] (-) TimerEvent: {}
+[19.705423] (gamefield) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[19.705755] (-) TimerEvent: {}
+[19.806227] (-) TimerEvent: {}
+[19.908211] (-) TimerEvent: {}
+[20.009635] (-) TimerEvent: {}
+[20.087891] (gamefield) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[20.110166] (-) TimerEvent: {}
+[20.211587] (-) TimerEvent: {}
+[20.313118] (-) TimerEvent: {}
+[20.414448] (-) TimerEvent: {}
+[20.515564] (-) TimerEvent: {}
+[20.616596] (-) TimerEvent: {}
+[20.717848] (-) TimerEvent: {}
+[20.818878] (-) TimerEvent: {}
+[20.920151] (-) TimerEvent: {}
+[21.021322] (-) TimerEvent: {}
+[21.122534] (-) TimerEvent: {}
+[21.223780] (-) TimerEvent: {}
+[21.324865] (-) TimerEvent: {}
+[21.425940] (-) TimerEvent: {}
+[21.517459] (gamefield) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[21.526238] (-) TimerEvent: {}
+[21.555070] (gamefield) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[21.595983] (gamefield) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[21.626560] (-) TimerEvent: {}
+[21.727764] (-) TimerEvent: {}
+[21.730845] (gamefield) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[21.812657] (gamefield) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[21.827950] (-) TimerEvent: {}
+[21.928571] (-) TimerEvent: {}
+[22.029387] (-) TimerEvent: {}
+[22.038724] (gamefield) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[22.097001] (gamefield) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[22.129692] (-) TimerEvent: {}
+[22.230748] (-) TimerEvent: {}
+[22.331926] (-) TimerEvent: {}
+[22.433025] (-) TimerEvent: {}
+[22.534410] (-) TimerEvent: {}
+[22.635594] (-) TimerEvent: {}
+[22.737009] (-) TimerEvent: {}
+[22.838200] (-) TimerEvent: {}
+[22.938884] (-) TimerEvent: {}
+[23.039923] (-) TimerEvent: {}
+[23.140932] (-) TimerEvent: {}
+[23.242337] (-) TimerEvent: {}
+[23.343592] (-) TimerEvent: {}
+[23.444745] (-) TimerEvent: {}
+[23.546063] (-) TimerEvent: {}
+[23.647219] (-) TimerEvent: {}
+[23.748342] (-) TimerEvent: {}
+[23.849465] (-) TimerEvent: {}
+[23.950323] (-) TimerEvent: {}
+[24.051444] (-) TimerEvent: {}
+[24.152363] (-) TimerEvent: {}
+[24.253557] (-) TimerEvent: {}
+[24.354732] (-) TimerEvent: {}
+[24.456065] (-) TimerEvent: {}
+[24.557017] (-) TimerEvent: {}
+[24.657969] (-) TimerEvent: {}
+[24.759013] (-) TimerEvent: {}
+[24.860085] (-) TimerEvent: {}
+[24.961091] (-) TimerEvent: {}
+[25.062159] (-) TimerEvent: {}
+[25.163155] (-) TimerEvent: {}
+[25.264656] (-) TimerEvent: {}
+[25.365696] (-) TimerEvent: {}
+[25.466606] (-) TimerEvent: {}
+[25.567613] (-) TimerEvent: {}
+[25.668519] (-) TimerEvent: {}
+[25.769523] (-) TimerEvent: {}
+[25.870552] (-) TimerEvent: {}
+[25.971471] (-) TimerEvent: {}
+[26.072326] (-) TimerEvent: {}
+[26.173313] (-) TimerEvent: {}
+[26.274244] (-) TimerEvent: {}
+[26.375144] (-) TimerEvent: {}
+[26.476038] (-) TimerEvent: {}
+[26.576902] (-) TimerEvent: {}
+[26.677660] (-) TimerEvent: {}
+[26.778476] (-) TimerEvent: {}
+[26.879356] (-) TimerEvent: {}
+[26.980212] (-) TimerEvent: {}
+[27.081155] (-) TimerEvent: {}
+[27.181938] (-) TimerEvent: {}
+[27.282733] (-) TimerEvent: {}
+[27.383711] (-) TimerEvent: {}
+[27.484557] (-) TimerEvent: {}
+[27.585507] (-) TimerEvent: {}
+[27.686348] (-) TimerEvent: {}
+[27.787164] (-) TimerEvent: {}
+[27.888051] (-) TimerEvent: {}
+[27.988824] (-) TimerEvent: {}
+[28.089596] (-) TimerEvent: {}
+[28.190285] (-) TimerEvent: {}
+[28.291120] (-) TimerEvent: {}
+[28.392164] (-) TimerEvent: {}
+[28.493062] (-) TimerEvent: {}
+[28.593892] (-) TimerEvent: {}
+[28.694813] (-) TimerEvent: {}
+[28.795803] (-) TimerEvent: {}
+[28.896821] (-) TimerEvent: {}
+[28.997723] (-) TimerEvent: {}
+[29.098982] (-) TimerEvent: {}
+[29.200311] (-) TimerEvent: {}
+[29.301397] (-) TimerEvent: {}
+[29.402658] (-) TimerEvent: {}
+[29.503929] (-) TimerEvent: {}
+[29.605147] (-) TimerEvent: {}
+[29.706435] (-) TimerEvent: {}
+[29.807870] (-) TimerEvent: {}
+[29.908965] (-) TimerEvent: {}
+[30.010148] (-) TimerEvent: {}
+[30.111554] (-) TimerEvent: {}
+[30.212598] (-) TimerEvent: {}
+[30.313656] (-) TimerEvent: {}
+[30.414913] (-) TimerEvent: {}
+[30.516511] (-) TimerEvent: {}
+[30.562636] (gamefield) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[30.616719] (-) TimerEvent: {}
+[30.717853] (-) TimerEvent: {}
+[30.818934] (-) TimerEvent: {}
+[30.920245] (-) TimerEvent: {}
+[31.021403] (-) TimerEvent: {}
+[31.122398] (-) TimerEvent: {}
+[31.223618] (-) TimerEvent: {}
+[31.324863] (-) TimerEvent: {}
+[31.426144] (-) TimerEvent: {}
+[31.527516] (-) TimerEvent: {}
+[31.628687] (-) TimerEvent: {}
+[31.729704] (-) TimerEvent: {}
+[31.830736] (-) TimerEvent: {}
+[31.931922] (-) TimerEvent: {}
+[32.033137] (-) TimerEvent: {}
+[32.134239] (-) TimerEvent: {}
+[32.235484] (-) TimerEvent: {}
+[32.336465] (-) TimerEvent: {}
+[32.437786] (-) TimerEvent: {}
+[32.538762] (-) TimerEvent: {}
+[32.639978] (-) TimerEvent: {}
+[32.740959] (-) TimerEvent: {}
+[32.842069] (-) TimerEvent: {}
+[32.943106] (-) TimerEvent: {}
+[33.044392] (-) TimerEvent: {}
+[33.145157] (-) TimerEvent: {}
+[33.246279] (-) TimerEvent: {}
+[33.347471] (-) TimerEvent: {}
+[33.448477] (-) TimerEvent: {}
+[33.549309] (-) TimerEvent: {}
+[33.650148] (-) TimerEvent: {}
+[33.751455] (-) TimerEvent: {}
+[33.852301] (-) TimerEvent: {}
+[33.953234] (-) TimerEvent: {}
+[34.054324] (-) TimerEvent: {}
+[34.155428] (-) TimerEvent: {}
+[34.256489] (-) TimerEvent: {}
+[34.357262] (-) TimerEvent: {}
+[34.458112] (-) TimerEvent: {}
+[34.559392] (-) TimerEvent: {}
+[34.660146] (-) TimerEvent: {}
+[34.760972] (-) TimerEvent: {}
+[34.861800] (-) TimerEvent: {}
+[34.962413] (-) TimerEvent: {}
+[35.063553] (-) TimerEvent: {}
+[35.164334] (-) TimerEvent: {}
+[35.265108] (-) TimerEvent: {}
+[35.365918] (-) TimerEvent: {}
+[35.466859] (-) TimerEvent: {}
+[35.567915] (-) TimerEvent: {}
+[35.668632] (-) TimerEvent: {}
+[35.769309] (-) TimerEvent: {}
+[35.870207] (-) TimerEvent: {}
+[35.971069] (-) TimerEvent: {}
+[36.071980] (-) TimerEvent: {}
+[36.172916] (-) TimerEvent: {}
+[36.273740] (-) TimerEvent: {}
+[36.374571] (-) TimerEvent: {}
+[36.475531] (-) TimerEvent: {}
+[36.576287] (-) TimerEvent: {}
+[36.677221] (-) TimerEvent: {}
+[36.777935] (-) TimerEvent: {}
+[36.878849] (-) TimerEvent: {}
+[36.979739] (-) TimerEvent: {}
+[37.080656] (-) TimerEvent: {}
+[37.181975] (-) TimerEvent: {}
+[37.283175] (-) TimerEvent: {}
+[37.384429] (-) TimerEvent: {}
+[37.485727] (-) TimerEvent: {}
+[37.586844] (-) TimerEvent: {}
+[37.688239] (-) TimerEvent: {}
+[37.789342] (-) TimerEvent: {}
+[37.890488] (-) TimerEvent: {}
+[37.991636] (-) TimerEvent: {}
+[38.092689] (-) TimerEvent: {}
+[38.193818] (-) TimerEvent: {}
+[38.295096] (-) TimerEvent: {}
+[38.396509] (-) TimerEvent: {}
+[38.497544] (-) TimerEvent: {}
+[38.598665] (-) TimerEvent: {}
+[38.605318] (gamefield) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[38.699065] (-) TimerEvent: {}
+[38.800076] (-) TimerEvent: {}
+[38.901146] (-) TimerEvent: {}
+[39.002371] (-) TimerEvent: {}
+[39.103510] (-) TimerEvent: {}
+[39.204548] (-) TimerEvent: {}
+[39.449837] (-) TimerEvent: {}
+[39.550978] (-) TimerEvent: {}
+[39.652058] (-) TimerEvent: {}
+[39.753345] (-) TimerEvent: {}
+[39.854702] (-) TimerEvent: {}
+[39.955828] (-) TimerEvent: {}
+[40.057125] (-) TimerEvent: {}
+[40.158452] (-) TimerEvent: {}
+[40.259743] (-) TimerEvent: {}
+[40.361036] (-) TimerEvent: {}
+[40.462309] (-) TimerEvent: {}
+[40.563576] (-) TimerEvent: {}
+[40.664901] (-) TimerEvent: {}
+[40.766282] (-) TimerEvent: {}
+[40.867480] (-) TimerEvent: {}
+[40.968746] (-) TimerEvent: {}
+[41.069847] (-) TimerEvent: {}
+[41.171091] (-) TimerEvent: {}
+[41.272233] (-) TimerEvent: {}
+[41.373242] (-) TimerEvent: {}
+[41.474065] (-) TimerEvent: {}
+[41.575064] (-) TimerEvent: {}
+[41.676064] (-) TimerEvent: {}
+[41.776970] (-) TimerEvent: {}
+[41.877939] (-) TimerEvent: {}
+[41.978830] (-) TimerEvent: {}
+[42.079818] (-) TimerEvent: {}
+[42.180931] (-) TimerEvent: {}
+[42.281766] (-) TimerEvent: {}
+[42.382499] (-) TimerEvent: {}
+[42.483131] (-) TimerEvent: {}
+[42.583812] (-) TimerEvent: {}
+[42.684544] (-) TimerEvent: {}
+[42.785084] (-) TimerEvent: {}
+[42.885923] (-) TimerEvent: {}
+[42.986660] (-) TimerEvent: {}
+[43.087633] (-) TimerEvent: {}
+[43.188466] (-) TimerEvent: {}
+[43.289151] (-) TimerEvent: {}
+[43.390006] (-) TimerEvent: {}
+[43.491006] (-) TimerEvent: {}
+[43.591941] (-) TimerEvent: {}
+[43.692616] (-) TimerEvent: {}
+[43.793519] (-) TimerEvent: {}
+[43.894531] (-) TimerEvent: {}
+[43.995361] (-) TimerEvent: {}
+[44.096345] (-) TimerEvent: {}
+[44.197273] (-) TimerEvent: {}
+[44.298115] (-) TimerEvent: {}
+[44.398923] (-) TimerEvent: {}
+[44.500011] (-) TimerEvent: {}
+[44.600716] (-) TimerEvent: {}
+[44.701421] (-) TimerEvent: {}
+[44.802229] (-) TimerEvent: {}
+[44.903054] (-) TimerEvent: {}
+[45.003941] (-) TimerEvent: {}
+[45.104775] (-) TimerEvent: {}
+[45.205595] (-) TimerEvent: {}
+[45.306501] (-) TimerEvent: {}
+[45.407398] (-) TimerEvent: {}
+[45.508164] (-) TimerEvent: {}
+[45.608728] (-) TimerEvent: {}
+[45.709360] (-) TimerEvent: {}
+[45.810048] (-) TimerEvent: {}
+[45.910666] (-) TimerEvent: {}
+[46.011512] (-) TimerEvent: {}
+[46.112292] (-) TimerEvent: {}
+[46.213283] (-) TimerEvent: {}
+[46.314834] (-) TimerEvent: {}
+[46.415891] (-) TimerEvent: {}
+[46.516817] (-) TimerEvent: {}
+[46.617665] (-) TimerEvent: {}
+[46.719023] (-) TimerEvent: {}
+[46.820161] (-) TimerEvent: {}
+[46.921112] (-) TimerEvent: {}
+[47.022404] (-) TimerEvent: {}
+[47.123532] (-) TimerEvent: {}
+[47.224652] (-) TimerEvent: {}
+[47.325787] (-) TimerEvent: {}
+[47.426759] (-) TimerEvent: {}
+[47.528077] (-) TimerEvent: {}
+[47.629039] (-) TimerEvent: {}
+[47.729576] (-) TimerEvent: {}
+[47.830349] (-) TimerEvent: {}
+[47.931155] (-) TimerEvent: {}
+[48.032402] (-) TimerEvent: {}
+[48.133208] (-) TimerEvent: {}
+[48.234266] (-) TimerEvent: {}
+[48.335519] (-) TimerEvent: {}
+[48.436630] (-) TimerEvent: {}
+[48.537607] (-) TimerEvent: {}
+[48.638583] (-) TimerEvent: {}
+[48.739621] (-) TimerEvent: {}
+[48.840651] (-) TimerEvent: {}
+[48.941561] (-) TimerEvent: {}
+[49.042563] (-) TimerEvent: {}
+[49.143492] (-) TimerEvent: {}
+[49.244455] (-) TimerEvent: {}
+[49.311619] (gamefield) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[49.344770] (-) TimerEvent: {}
+[49.445642] (-) TimerEvent: {}
+[49.546294] (-) TimerEvent: {}
+[49.646983] (-) TimerEvent: {}
+[49.747579] (-) TimerEvent: {}
+[49.820338] (gamefield) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[49.847747] (-) TimerEvent: {}
+[49.948229] (-) TimerEvent: {}
+[50.048912] (-) TimerEvent: {}
+[50.149596] (-) TimerEvent: {}
+[50.250446] (-) TimerEvent: {}
+[50.351539] (-) TimerEvent: {}
+[50.452183] (-) TimerEvent: {}
+[50.553088] (-) TimerEvent: {}
+[50.645192] (gamefield) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[50.646333] (gamefield) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[50.653278] (-) TimerEvent: {}
+[50.753944] (-) TimerEvent: {}
+[50.854805] (-) TimerEvent: {}
+[50.955904] (-) TimerEvent: {}
+[51.056701] (-) TimerEvent: {}
+[51.157481] (-) TimerEvent: {}
+[51.254094] (gamefield) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[51.257760] (-) TimerEvent: {}
+[51.261492] (gamefield) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[51.358076] (-) TimerEvent: {}
+[51.459119] (-) TimerEvent: {}
+[51.560204] (-) TimerEvent: {}
+[51.661099] (-) TimerEvent: {}
+[51.761671] (-) TimerEvent: {}
+[51.862530] (-) TimerEvent: {}
+[51.963519] (-) TimerEvent: {}
+[52.064521] (-) TimerEvent: {}
+[52.165434] (-) TimerEvent: {}
+[52.266697] (-) TimerEvent: {}
+[52.368178] (-) TimerEvent: {}
+[52.469476] (-) TimerEvent: {}
+[52.570911] (-) TimerEvent: {}
+[52.671851] (-) TimerEvent: {}
+[52.772645] (-) TimerEvent: {}
+[52.873871] (-) TimerEvent: {}
+[52.974921] (-) TimerEvent: {}
+[53.076410] (-) TimerEvent: {}
+[53.177597] (-) TimerEvent: {}
+[53.278881] (-) TimerEvent: {}
+[53.379991] (-) TimerEvent: {}
+[53.481249] (-) TimerEvent: {}
+[53.582459] (-) TimerEvent: {}
+[53.684101] (-) TimerEvent: {}
+[53.785389] (-) TimerEvent: {}
+[53.844391] (gamefield) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[53.885607] (-) TimerEvent: {}
+[53.986229] (-) TimerEvent: {}
+[54.086919] (-) TimerEvent: {}
+[54.187713] (-) TimerEvent: {}
+[54.288640] (-) TimerEvent: {}
+[54.389584] (-) TimerEvent: {}
+[54.490609] (-) TimerEvent: {}
+[54.591747] (-) TimerEvent: {}
+[54.611479] (gamefield) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[54.617213] (gamefield) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[54.623515] (gamefield) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[54.631737] (gamefield) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[54.668702] (gamefield) StdoutLine: {'line': b'-- Configuring done\n'}
+[54.689160] (gamefield) StdoutLine: {'line': b'-- Generating done\n'}
+[54.692026] (-) TimerEvent: {}
+[54.701350] (gamefield) StdoutLine: {'line': b'-- Build files have been written to: /home/victoria_rotich/gamefield/build/gamefield\n'}
+[54.738437] (gamefield) CommandEnded: {'returncode': 0}
+[54.745249] (gamefield) JobProgress: {'identifier': 'gamefield', 'progress': 'build'}
+[54.745434] (gamefield) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/victoria_rotich/gamefield/build/gamefield', '--', '-j8', '-l8'], 'cwd': '/home/victoria_rotich/gamefield/build/gamefield', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'victoria_rotich'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/victoria_rotich'), ('OLDPWD', '/home/victoria_rotich/gamefield/gamefield'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c84ca53c-3158-4e34-a507-32cda9687d1a.sock'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/victoria_rotich/dojo_robotics_2025/install:/home/victoria_rotich/ros2_ws/install:/home/victoria_rotich/dojo_robotics_2025/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'victoria_rotich'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/1253_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/victoria_rotich/.vscode-server/bin/488a1f239235055e34e673291fb8d8c810886f81/bin/remote-cli:/home/victoria_rotich/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.3/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.3/libnvvp:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2023.3.0/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/user/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0/LocalCache/local-packages/Python38/Scripts:/mnt/c/Program Files/dotnet/:/mnt/c/Users/user/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/user/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/user/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/JetBrains/PyCharm 2023.2.3/bin:/mnt/c/Users/user/AppData/Local/Programs/Python/Python312/Scripts:/mnt/c/Users/user/AppData/Local/GitHubDesktop/bin:/mnt/c/8086:/snap/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/etc/fast_ts.xml'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/victoria_rotich/dojo_robotics_2025/install/talker:/home/victoria_rotich/dojo_robotics_2025/install/my_robot_package:/home/victoria_rotich/dojo_robotics_2025/install/my_robot_pack2:/home/victoria_rotich/dojo_robotics_2025/install/listener:/home/victoria_rotich/dojo_robotics_2025/install/cpp_pubsub:/home/victoria_rotich/dojo_robotics_2025/src/install/my_robot_package:/home/victoria_rotich/ros2_ws/install/sllidar_ros2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/victoria_rotich/gamefield/build/gamefield'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/victoria_rotich/dojo_robotics_2025/install/talker/lib/python3.10/site-packages:/home/victoria_rotich/dojo_robotics_2025/build/my_robot_package:/home/victoria_rotich/dojo_robotics_2025/install/my_robot_package/lib/python3.10/site-packages:/home/victoria_rotich/dojo_robotics_2025/install/listener/lib/python3.10/site-packages:/home/victoria_rotich/dojo_robotics_2025/src/install/my_robot_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/victoria_rotich/dojo_robotics_2025/install/my_robot_pack2:/home/victoria_rotich/dojo_robotics_2025/install/cpp_pubsub:/home/victoria_rotich/ros2_ws/install/sllidar_ros2:/home/victoria_rotich/dojo_robotics_2025/install/talker:/home/victoria_rotich/dojo_robotics_2025/install/my_robot_package:/home/victoria_rotich/dojo_robotics_2025/install/listener:/home/victoria_rotich/dojo_robotics_2025/src/install/my_robot_package:/opt/ros/humble'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:')]), 'shell': False}
+[54.792258] (-) TimerEvent: {}
+[54.834172] (gamefield) CommandEnded: {'returncode': 0}
+[54.836544] (gamefield) JobProgress: {'identifier': 'gamefield', 'progress': 'install'}
+[54.857129] (gamefield) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/victoria_rotich/gamefield/build/gamefield'], 'cwd': '/home/victoria_rotich/gamefield/build/gamefield', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'victoria_rotich'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/victoria_rotich'), ('OLDPWD', '/home/victoria_rotich/gamefield/gamefield'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c84ca53c-3158-4e34-a507-32cda9687d1a.sock'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/victoria_rotich/dojo_robotics_2025/install:/home/victoria_rotich/ros2_ws/install:/home/victoria_rotich/dojo_robotics_2025/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'victoria_rotich'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/1253_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/victoria_rotich/.vscode-server/bin/488a1f239235055e34e673291fb8d8c810886f81/bin/remote-cli:/home/victoria_rotich/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.3/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.3/libnvvp:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2023.3.0/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/user/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0/LocalCache/local-packages/Python38/Scripts:/mnt/c/Program Files/dotnet/:/mnt/c/Users/user/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/user/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/user/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/JetBrains/PyCharm 2023.2.3/bin:/mnt/c/Users/user/AppData/Local/Programs/Python/Python312/Scripts:/mnt/c/Users/user/AppData/Local/GitHubDesktop/bin:/mnt/c/8086:/snap/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/etc/fast_ts.xml'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/victoria_rotich/dojo_robotics_2025/install/talker:/home/victoria_rotich/dojo_robotics_2025/install/my_robot_package:/home/victoria_rotich/dojo_robotics_2025/install/my_robot_pack2:/home/victoria_rotich/dojo_robotics_2025/install/listener:/home/victoria_rotich/dojo_robotics_2025/install/cpp_pubsub:/home/victoria_rotich/dojo_robotics_2025/src/install/my_robot_package:/home/victoria_rotich/ros2_ws/install/sllidar_ros2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/victoria_rotich/gamefield/build/gamefield'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/victoria_rotich/dojo_robotics_2025/install/talker/lib/python3.10/site-packages:/home/victoria_rotich/dojo_robotics_2025/build/my_robot_package:/home/victoria_rotich/dojo_robotics_2025/install/my_robot_package/lib/python3.10/site-packages:/home/victoria_rotich/dojo_robotics_2025/install/listener/lib/python3.10/site-packages:/home/victoria_rotich/dojo_robotics_2025/src/install/my_robot_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/victoria_rotich/dojo_robotics_2025/install/my_robot_pack2:/home/victoria_rotich/dojo_robotics_2025/install/cpp_pubsub:/home/victoria_rotich/ros2_ws/install/sllidar_ros2:/home/victoria_rotich/dojo_robotics_2025/install/talker:/home/victoria_rotich/dojo_robotics_2025/install/my_robot_package:/home/victoria_rotich/dojo_robotics_2025/install/listener:/home/victoria_rotich/dojo_robotics_2025/src/install/my_robot_package:/opt/ros/humble'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:')]), 'shell': False}
+[54.877006] (gamefield) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[54.877945] (gamefield) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[54.880982] (gamefield) StdoutLine: {'line': b'-- Symlinking: /home/victoria_rotich/gamefield/install/gamefield/share/ament_index/resource_index/package_run_dependencies/gamefield\n'}
+[54.892489] (-) TimerEvent: {}
+[54.902331] (gamefield) StdoutLine: {'line': b'-- Symlinking: /home/victoria_rotich/gamefield/install/gamefield/share/ament_index/resource_index/parent_prefix_path/gamefield\n'}
+[54.927194] (gamefield) StdoutLine: {'line': b'-- Symlinking: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/environment/ament_prefix_path.sh\n'}
+[54.949459] (gamefield) StdoutLine: {'line': b'-- Symlinking: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/environment/ament_prefix_path.dsv\n'}
+[54.970649] (gamefield) StdoutLine: {'line': b'-- Symlinking: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/environment/path.sh\n'}
+[54.992602] (-) TimerEvent: {}
+[54.993178] (gamefield) StdoutLine: {'line': b'-- Symlinking: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/environment/path.dsv\n'}
+[55.016293] (gamefield) StdoutLine: {'line': b'-- Symlinking: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/local_setup.bash\n'}
+[55.037324] (gamefield) StdoutLine: {'line': b'-- Symlinking: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/local_setup.sh\n'}
+[55.057725] (gamefield) StdoutLine: {'line': b'-- Symlinking: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/local_setup.zsh\n'}
+[55.078324] (gamefield) StdoutLine: {'line': b'-- Symlinking: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/local_setup.dsv\n'}
+[55.092774] (-) TimerEvent: {}
+[55.098652] (gamefield) StdoutLine: {'line': b'-- Symlinking: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/package.dsv\n'}
+[55.121833] (gamefield) StdoutLine: {'line': b'-- Symlinking: /home/victoria_rotich/gamefield/install/gamefield/share/ament_index/resource_index/packages/gamefield\n'}
+[55.143097] (gamefield) StdoutLine: {'line': b'-- Symlinking: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/cmake/gamefieldConfig.cmake\n'}
+[55.166224] (gamefield) StdoutLine: {'line': b'-- Symlinking: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/cmake/gamefieldConfig-version.cmake\n'}
+[55.188300] (gamefield) StdoutLine: {'line': b'-- Symlinking: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/package.xml\n'}
+[55.192944] (-) TimerEvent: {}
+[55.210286] (gamefield) StdoutLine: {'line': b'-- Symlinking: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/urdf/gamefield.urdf\n'}
+[55.232374] (gamefield) StdoutLine: {'line': b'-- Symlinking: /home/victoria_rotich/gamefield/install/gamefield/share/gamefield/launch/view_gamefield.launch.py\n'}
+[55.256473] (gamefield) CommandEnded: {'returncode': 0}
+[55.293437] (-) TimerEvent: {}
+[55.312665] (gamefield) JobEnded: {'identifier': 'gamefield', 'rc': 0}
+[55.313694] (-) EventReactorShutdown: {}

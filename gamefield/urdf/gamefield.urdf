@@ -1,0 +1,304 @@
+<?xml version="1.0"?>
+<robot name="gamefield" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <!-- Base Floor -->
+  <link name="floor">
+    <visual>
+      <geometry>
+        <box size="6.0 3.0 0.05"/>
+      </geometry>
+      <material name="light_brown">
+        <color rgba="0.8 0.52 0.25 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="6.0 3.0 0.05"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="5.0"/>
+      <origin xyz="0 0 0" />
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0"
+               iyy="1.0" iyz="0.0"
+               izz="1.0"/>
+    </inertial>
+  </link>
+
+  <gazebo reference="floor">
+    <pose>0 0 0.025 0 0 0</pose>
+    <material>Gazebo/Wood</material>
+  </gazebo>
+
+  <!-- FRONT WALL -->
+  <link name="wall_front">
+    <visual>
+      <geometry>
+        <box size="6.0 0.1 0.5"/>
+      </geometry>
+      <material name="brown">
+        <color rgba="0.59 0.29 0.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="6.0 0.1 0.5"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="15.0"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0"
+               iyy="1.0" iyz="0.0"
+               izz="1.0"/>
+    </inertial>
+  </link>
+
+  <gazebo reference="wall_front">
+    <pose>0 1.55 0.25 0 0 0</pose>
+    <material>Gazebo/Wood</material>
+  </gazebo>
+
+  <!-- BACK WALL -->
+  <link name="wall_back">
+    <visual>
+      <geometry>
+        <box size="6.0 0.1 0.5"/>
+      </geometry>
+      <material name="brown"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="6.0 0.1 0.5"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="15.0"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0"
+               iyy="1.0" iyz="0.0"
+               izz="1.0"/>
+    </inertial>
+  </link>
+
+  <gazebo reference="wall_back">
+    <pose>0 -1.55 0.25 0 0 0</pose>
+    <material>Gazebo/Wood</material>
+  </gazebo>
+
+  <!-- LEFT WALL -->
+  <link name="wall_left">
+    <visual>
+      <geometry>
+        <box size="0.1 3.0 0.5"/>
+      </geometry>
+      <material name="brown"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.1 3.0 0.5"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="10.0"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0"
+               iyy="1.0" iyz="0.0"
+               izz="1.0"/>
+    </inertial>
+  </link>
+
+  <gazebo reference="wall_left">
+    <pose>-3.05 0 0.25 0 0 0</pose>
+    <material>Gazebo/Wood</material>
+  </gazebo>
+
+  <!-- RIGHT WALL -->
+  <link name="wall_right">
+    <visual>
+      <geometry>
+        <box size="0.1 3.0 0.5"/>
+      </geometry>
+      <material name="brown"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.1 3.0 0.5"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="10.0"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0"
+               iyy="1.0" iyz="0.0"
+               izz="1.0"/>
+    </inertial>
+  </link>
+
+  <gazebo reference="wall_right">
+    <pose>3.05 0 0.25 0 0 0</pose>
+    <material>Gazebo/Wood</material>
+  </gazebo>
+
+  <!-- JOINTS to attach walls to floor -->
+  <joint name="joint_wall_front" type="fixed">
+    <parent link="floor"/>
+    <child link="wall_front"/>
+    <origin xyz="0 1.55 0.25" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="joint_wall_back" type="fixed">
+    <parent link="floor"/>
+    <child link="wall_back"/>
+    <origin xyz="0 -1.55 0.25" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="joint_wall_left" type="fixed">
+    <parent link="floor"/>
+    <child link="wall_left"/>
+    <origin xyz="-3.05 0 0.25" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="joint_wall_right" type="fixed">
+    <parent link="floor"/>
+    <child link="wall_right"/>
+    <origin xyz="3.05 0 0.25" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Partition Wall -->
+<link name="partition_wall">
+  <visual>
+    <geometry>
+      <box size="0.1 1.20035 0.5"/>
+    </geometry>
+    <material name="brown"/>
+  </visual>
+  <collision>
+    <geometry>
+      <box size="0.1 1.20035 0.5"/>
+    </geometry>
+  </collision>
+  <inertial>
+    <mass value="10.0"/>
+    <origin xyz="0 0 0"/>
+    <inertia ixx="1.0" ixy="0.0" ixz="0.0"
+             iyy="1.0" iyz="0.0"
+             izz="1.0"/>
+  </inertial>
+</link>
+
+<gazebo reference="partition_wall">
+  <pose>1.00 -0.899825 0.25 0 0 0</pose>
+  <material>Gazebo/Wood</material>
+</gazebo>
+
+<joint name="joint_partition_wall" type="fixed">
+  <parent link="floor"/>
+  <child link="partition_wall"/>
+  <origin xyz="1.00 -0.899825 0.25" rpy="0 0 0"/>
+</joint>
+
+<!-- Vertical leg of the L-shaped partition -->
+<link name="partition_leg">
+  <visual>
+    <geometry>
+      <!-- box size: length(X) x thickness(Y) x height(Z) -->
+      <box size="0.982165 0.1 0.5"/>
+    </geometry>
+    <material name="brown"/>
+  </visual>
+  <collision>
+    <geometry>
+      <box size="0.982165 0.1 0.5"/>
+    </geometry>
+  </collision>
+  <inertial>
+    <mass value="10.0"/>
+    <origin xyz="0 0 0"/>
+    <inertia ixx="1.0" ixy="0.0" ixz="0.0"
+             iyy="1.0" iyz="0.0"
+             izz="1.0"/>
+  </inertial>
+</link>
+
+<gazebo reference="partition_leg">
+  <pose>1.438 -0.3 0.25 0 0 0</pose>
+  <material>Gazebo/Wood</material>
+</gazebo>
+
+<joint name="joint_partition_leg" type="fixed">
+  <parent link="floor"/>
+  <child link="partition_leg"/>
+  <origin xyz="1.438 -0.3 0.25" rpy="0 0 0"/>
+</joint>
+
+<!-- Ramp1 to terrain -->
+<link name="plywood_ramp">
+  <visual>
+    <geometry>
+      <!-- box: length along ramp (X), width (Y), thickness (Z) -->
+      <box size="0.567 1.08 0.02"/>
+    </geometry>
+    <material name="brown"/>
+  </visual>
+  <collision>
+    <geometry>
+      <box size="0.567 1.08 0.02"/>
+    </geometry>
+  </collision>
+  <inertial>
+    <mass value="5.0"/>
+    <origin xyz="0 0 0"/>
+    <inertia ixx="0.1" ixy="0.0" ixz="0.0"
+             iyy="0.1" iyz="0.0"
+             izz="0.1"/>
+  </inertial>
+</link>
+
+<gazebo reference="plywood_ramp">
+  <pose>2.46 -0.42 0.01 0 0.1745 4.7124</pose>
+  <material>Gazebo/Wood</material>
+</gazebo>
+
+<joint name="joint_plywood_ramp" type="fixed">
+  <parent link="floor"/>
+  <child link="plywood_ramp"/>
+  <origin xyz="2.46 -0.42 0.01" rpy="0 0.1745 4.7124"/>
+</joint>
+
+<!-- 3rd partition left of 1st ramp-->
+<link name="third_partition_wall">
+  <visual>
+    <geometry>
+      <box size="0.1 1.2 0.5"/>
+    </geometry>
+    <material name="brown"/>
+  </visual>
+  <collision>
+    <geometry>
+      <box size="0.1 1.2 0.5"/>
+    </geometry>
+  </collision>
+  <inertial>
+    <mass value="10.0"/>
+    <origin xyz="0 0 0"/>
+    <inertia ixx="1.0" ixy="0.0" ixz="0.0"
+             iyy="1.0" iyz="0.0"
+             izz="1.0"/>
+  </inertial>
+</link>
+
+<gazebo reference="third_partition_wall">
+  <pose>2.4 -0.899825 0.25 0 0 0</pose>
+  <material>Gazebo/Wood</material>
+</gazebo>
+
+<joint name="third_joint_partition_wall" type="fixed">
+  <parent link="floor"/>
+  <child link="partition_wall"/>
+  <origin xyz="2.4 -0.899825 0.25" rpy="0 0 0"/>
+</joint>
+
+
+
+</robot>
