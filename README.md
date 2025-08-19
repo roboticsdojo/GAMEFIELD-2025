@@ -40,3 +40,5 @@ To use OPENGL Rendering, enter this command in WSL2 terminal:
  ```
  
 More coming soon...
+
+More details on how to spawn your robot with this world
