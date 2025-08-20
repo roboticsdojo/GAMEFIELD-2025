@@ -323,6 +323,235 @@
         </collision>
       </link>
 
+      <!-- Ramp2 -->
+      <link name="plywood_ramp_two">
+        <pose>1.37 0.6 0.088 0 0.1745 4.7124</pose>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.6 0.47 0.02</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0 0 0 1</ambient>
+            <diffuse>0 0 0 1</diffuse>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.6 0.47 0.02</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+
+      <!-- Vertical Leg After Ramp -->
+      <link name="partition_leg_two">
+        <pose>0.56 -0.05 0.25 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1.182 0.1 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.59 0.29 0.0 1</ambient>
+            <diffuse>0.59 0.29 0.0 1</diffuse>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>1.182 0.1 0.5</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+
+      <!-- Deposit Area 1 -->
+      <link name="deposit_one">
+        <pose>-0.208 1.27 0.25 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.48 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.59 0.29 0.0 1</ambient>
+            <diffuse>0.59 0.29 0.0 1</diffuse>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.48 0.5</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+
+      <!-- Deposit Area 2 -->
+      <link name="deposit_two">
+        <pose>-1.0 1.27 0.25 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.48 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.59 0.29 0.0 1</ambient>
+            <diffuse>0.59 0.29 0.0 1</diffuse>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.48 0.5</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+
+      <!-- Depositing Area Vertical Leg Separation -->
+      <link name="partition_depositing">
+        <pose>-1.8 0.5 0.25 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>2.4 0.1 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.59 0.29 0.0 1</ambient>
+            <diffuse>0.59 0.29 0.0 1</diffuse>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>2.4 0.1 0.5</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+
+      <!-- Top side of barrier -->
+      <link name="top_barrier">
+        <pose>0 -0.35 0.25 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 1.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.59 0.29 0.0 1</ambient>
+            <diffuse>0.59 0.29 0.0 1</diffuse>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 1.0 0.5</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+
+      <!-- Far Left side of barrier -->
+      <link name="far_left_barrier">
+        <pose>-0.65 0.1 0.25 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1.236 0.1 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.59 0.29 0.0 1</ambient>
+            <diffuse>0.59 0.29 0.0 1</diffuse>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>1.236 0.1 0.5</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+
+      <!-- Bottom side of barrier -->
+      <link name="bottom_barrier">
+        <pose>-1.3 -0.2 0.25 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.7 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.59 0.29 0.0 1</ambient>
+            <diffuse>0.59 0.29 0.0 1</diffuse>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.7 0.5</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+
+      <!-- Lower Top side of barrier -->
+      <link name="lower_top_barrier">
+        <pose>-0.6 -0.7 0.25 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.6 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.59 0.29 0.0 1</ambient>
+            <diffuse>0.59 0.29 0.0 1</diffuse>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.6 0.5</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+
+      <!-- Near Left side of barrier -->
+      <link name="near_left_barrier">
+        <pose>-0.95 -0.95 0.25 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.8 0.1 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.59 0.29 0.0 1</ambient>
+            <diffuse>0.59 0.29 0.0 1</diffuse>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.8 0.1 0.5</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
 
     </model>
 

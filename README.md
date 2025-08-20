@@ -42,3 +42,9 @@ To use OPENGL Rendering, enter this command in WSL2 terminal:
 More coming soon...
 
 More details on how to spawn your robot with this world
+
+To view the world alone run the following command:
+
+```bash
+ros2 launch gamefield launch_ign.launch.py
+```
