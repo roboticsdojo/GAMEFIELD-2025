@@ -211,7 +211,6 @@
           </geometry>
         </collision>
       </link>
-
       <!-- Grass platform -->
       <link name="grass_platform">
         <pose>2.75 0.544 0.14 0 0 0</pose>
@@ -235,27 +234,94 @@
         </collision>
       </link>
       <!-- Gravel platform -->
-<link name="gravel_platform">
-  <pose>2.75 0.97 0.14 0 0 0</pose> 
-  <visual name="visual">
-    <geometry>
-      <box>
-        <size>0.65 1.0 0.02</size>
-      </box>
-    </geometry>
-    <material>
-      <ambient>0.5 0.5 0.5 1</ambient>
-      <diffuse>0.5 0.5 0.5 1</diffuse>
-    </material>
-  </visual>
-  <collision name="collision">
-    <geometry>
-      <box>
-        <size>0.65 1.0 0.02</size>
-      </box>
-    </geometry>
-  </collision>
-</link>
+      <link name="gravel_platform">
+        <pose>2.75 0.97 0.14 0 0 0</pose> 
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.5 1.05 0.02</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.5 0.5 1</ambient>
+            <diffuse>0.5 0.5 0.5 1</diffuse>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.5 1.05 0.02</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+      <!-- Sawdust platform -->
+      <link name="sawdust_platform">
+        <pose>2.0 1.2 0.14 0 0 0</pose> 
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1.733 0.648 0.02</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.59 0.29 1 1</ambient>
+            <diffuse>0.59 0.29 1 1</diffuse>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>1.733 0.648 0.02</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+      <!-- Sawdust Partition -->
+      <link name="sawdust_partition">
+        <pose>2.0 0.85 0.25 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.8 0.1 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.59 0.29 0.0 1</ambient>
+            <diffuse>0.59 0.29 0.0 1</diffuse>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.8 0.1 0.5</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+
+      <!-- 2nd Ramp Partition -->
+      <link name="ramp_wall_two">
+        <pose>1.1 0.71 0.25 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 1.6 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.59 0.29 0.0 1</ambient>
+            <diffuse>0.59 0.29 0.0 1</diffuse>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 1.6 0.5</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
 
 
     </model>
