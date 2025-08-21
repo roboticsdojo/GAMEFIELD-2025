@@ -176,8 +176,8 @@
             </box>
           </geometry>
           <material>
-            <ambient>0 0 0 1</ambient>
-            <diffuse>0 0 0 1</diffuse>
+            <ambient>0.96 0.96 0.86 1</ambient>
+            <diffuse>0.96 0.96 0.86 1</diffuse>
           </material>
         </visual>
         <collision name="collision">
@@ -265,8 +265,8 @@
             </box>
           </geometry>
           <material>
-            <ambient>0.59 0.29 1 1</ambient>
-            <diffuse>0.59 0.29 1 1</diffuse>
+            <ambient>1 1 0 1</ambient>
+            <diffuse>1 1 0 1</diffuse>
           </material>
         </visual>
         <collision name="collision">
@@ -333,8 +333,8 @@
             </box>
           </geometry>
           <material>
-            <ambient>0 0 0 1</ambient>
-            <diffuse>0 0 0 1</diffuse>
+            <ambient>0.96 0.96 0.86 1</ambient>
+            <diffuse>0.96 0.96 0.86 1</diffuse>
           </material>
         </visual>
         <collision name="collision">
